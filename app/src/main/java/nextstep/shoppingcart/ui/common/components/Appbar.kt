@@ -32,7 +32,7 @@ fun AppbarWithAction(
     DefaultAppbar(
         modifier = modifier,
         title = {
-            HeadlineLargeText(
+            TitleLargeText(
                 modifier = Modifier.padding(6.dp),
                 text = title,
                 color = MaterialTheme.colorScheme.onSurface,
@@ -62,7 +62,7 @@ fun AppbarWithNavigation(
     DefaultAppbar(
         modifier = modifier,
         title = {
-            HeadlineLargeText(
+            TitleLargeText(
                 modifier = Modifier.fillMaxWidth().padding(bottom = 6.dp),
                 text = title,
                 maxLines = 1,
