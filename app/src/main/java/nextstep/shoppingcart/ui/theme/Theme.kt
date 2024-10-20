@@ -23,8 +23,8 @@ private val DarkColorScheme = darkColorScheme(
     tertiary = Blue80,
     background = Color.Black,
     onBackground = Color.White,
-    surface = Color.White,
-    onSurface = Color.Black,
+    surface = Color.Black,
+    onSurface = Color.White,
 )
 
 private val LightColorScheme = lightColorScheme(
