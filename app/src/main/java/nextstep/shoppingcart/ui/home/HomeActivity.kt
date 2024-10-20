@@ -1,8 +1,10 @@
-package nextstep.shoppingcart
+package nextstep.shoppingcart.ui.home
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import nextstep.shoppingcart.domain.CartableProductRepository
+import nextstep.shoppingcart.domain.CartedProductRepository
 import nextstep.shoppingcart.ui.theme.ShoppingCartTheme
 
 class HomeActivity : ComponentActivity() {
@@ -10,6 +12,11 @@ class HomeActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ShoppingCartTheme {
+                HomeScreen(
+                    items = CartableProductRepository.fetchProducts(),
+                    onItemClick = {},
+                    onCartClick = {},
+                )
             }
         }
     }
