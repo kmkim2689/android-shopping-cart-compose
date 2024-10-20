@@ -47,7 +47,7 @@ private fun DefaultImage(
     Box(
         modifier = modifier
             .background(
-                color = Color.Transparent,
+                color = MaterialTheme.colorScheme.secondary,
                 shape = shape
             ),
     ) {
