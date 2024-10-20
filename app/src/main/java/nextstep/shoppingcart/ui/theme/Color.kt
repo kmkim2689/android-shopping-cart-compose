@@ -19,4 +19,11 @@ val BlueGrey50 = Color(0xFF455A64)
 val Blue40 = Color(0xFF1E88E5)
 val BlueGrey40 = Color(0xFF37474F)
 
+// 앱바
+val Black5 = Color(0xFF1D1B20)
 
+// 본문
+val Black60 = Color(0xFF333333)
+
+// Divider
+val Gray70 = Color(0xFFAAAAAA)
