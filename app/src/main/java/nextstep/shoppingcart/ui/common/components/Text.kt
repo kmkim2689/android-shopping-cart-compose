@@ -7,6 +7,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import nextstep.shoppingcart.ui.theme.ShoppingCartTheme
 
@@ -17,6 +18,7 @@ fun TitleLargeText(
     color: Color = MaterialTheme.colorScheme.onBackground,
     textAlign: TextAlign? = null,
     maxLines: Int = Int.MAX_VALUE,
+    textOverflow: TextOverflow = TextOverflow.Ellipsis,
 ) {
     DefaultText(
         modifier = modifier,
@@ -24,7 +26,8 @@ fun TitleLargeText(
         style = MaterialTheme.typography.titleLarge,
         textAlign = textAlign,
         maxLines = maxLines,
-        color = color
+        color = color,
+        textOverflow = textOverflow
     )
 }
 
@@ -35,6 +38,7 @@ fun BodyLargeText(
     color: Color = MaterialTheme.colorScheme.onBackground,
     textAlign: TextAlign? = null,
     maxLines: Int = Int.MAX_VALUE,
+    textOverflow: TextOverflow = TextOverflow.Ellipsis,
 ) {
     DefaultText(
         modifier = modifier,
@@ -43,6 +47,7 @@ fun BodyLargeText(
         textAlign = textAlign,
         color = color,
         maxLines = maxLines,
+        textOverflow = textOverflow
     )
 }
 
@@ -53,6 +58,7 @@ fun BodyMediumText(
     color: Color = MaterialTheme.colorScheme.onBackground,
     textAlign: TextAlign? = null,
     maxLines: Int = Int.MAX_VALUE,
+    textOverflow: TextOverflow = TextOverflow.Ellipsis,
 ) {
     DefaultText(
         modifier = modifier,
@@ -61,6 +67,7 @@ fun BodyMediumText(
         textAlign = textAlign,
         color = color,
         maxLines = maxLines,
+        textOverflow = textOverflow
     )
 }
 
@@ -71,6 +78,7 @@ fun HeadlineLargeText(
     color: Color = MaterialTheme.colorScheme.onBackground,
     textAlign: TextAlign? = null,
     maxLines: Int = Int.MAX_VALUE,
+    textOverflow: TextOverflow = TextOverflow.Ellipsis,
 ) {
     DefaultText(
         modifier = modifier,
@@ -79,6 +87,7 @@ fun HeadlineLargeText(
         textAlign = textAlign,
         color = color,
         maxLines = maxLines,
+        textOverflow = textOverflow,
     )
 }
 
@@ -89,6 +98,7 @@ fun HeadlineMediumText(
     color: Color = MaterialTheme.colorScheme.onBackground,
     textAlign: TextAlign? = null,
     maxLines: Int = Int.MAX_VALUE,
+    textOverflow: TextOverflow = TextOverflow.Ellipsis,
 ) {
     DefaultText(
         modifier = modifier,
@@ -96,7 +106,8 @@ fun HeadlineMediumText(
         style = MaterialTheme.typography.headlineMedium,
         textAlign = textAlign,
         maxLines = maxLines,
-        color = color
+        color = color,
+        textOverflow = textOverflow,
     )
 }
 
@@ -107,6 +118,7 @@ fun HeadlineSmallText(
     color: Color = MaterialTheme.colorScheme.onBackground,
     textAlign: TextAlign? = null,
     maxLines: Int = Int.MAX_VALUE,
+    textOverflow: TextOverflow = TextOverflow.Ellipsis,
 ) {
     DefaultText(
         modifier = modifier,
@@ -115,6 +127,7 @@ fun HeadlineSmallText(
         textAlign = textAlign,
         color = color,
         maxLines = maxLines,
+        textOverflow = textOverflow,
     )
 }
 
@@ -126,6 +139,7 @@ private fun DefaultText(
     textAlign: TextAlign? = null,
     color: Color = Color.Unspecified,
     maxLines: Int = Int.MAX_VALUE,
+    textOverflow: TextOverflow = TextOverflow.Ellipsis,
 ) {
     Text(
         modifier = modifier,
@@ -133,7 +147,8 @@ private fun DefaultText(
         style = style,
         textAlign = textAlign,
         color = color,
-        maxLines = maxLines
+        maxLines = maxLines,
+        overflow = textOverflow,
     )
 }
 
