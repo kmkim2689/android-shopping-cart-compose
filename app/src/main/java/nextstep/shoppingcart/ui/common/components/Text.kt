@@ -1,4 +1,4 @@
-package nextstep.shoppingcart.ui.components
+package nextstep.shoppingcart.ui.common.components
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
