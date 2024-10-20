@@ -23,8 +23,15 @@ val Typography = Typography(
         lineHeight = 24.sp,
         letterSpacing = 0.5.sp
     ),
-    /* Detail Title */
+    /* Appbar Title */
     titleLarge = TextStyle(
+        fontFamily = FontFamily.Default,
+        fontWeight = FontWeight.Normal,
+        fontSize = 20.sp,
+        lineHeight = 24.sp,
+    ),
+    /* Detail Title */
+    headlineLarge = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Bold,
         fontSize = 24.sp,
@@ -32,7 +39,7 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     ),
     /* Cart Title */
-    titleMedium = TextStyle(
+    headlineMedium = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Bold,
         fontSize = 20.sp,
@@ -40,7 +47,7 @@ val Typography = Typography(
         letterSpacing = 0.5.sp,
     ),
     /* Home Item Title */
-    titleSmall = TextStyle(
+    headlineSmall = TextStyle(
         fontFamily = FontFamily.Default,
         fontWeight = FontWeight.Bold,
         fontSize = 16.sp,
