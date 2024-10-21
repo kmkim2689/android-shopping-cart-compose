@@ -22,7 +22,7 @@ import coil3.compose.AsyncImage
 @Composable
 fun SquareImage(
     modifier: Modifier = Modifier,
-    model: Any,
+    model: Any?,
     contentDescription: String? = null,
 ) {
     DefaultImage(
@@ -36,7 +36,7 @@ fun SquareImage(
 @Composable
 private fun DefaultImage(
     modifier: Modifier = Modifier,
-    model: Any,
+    model: Any?,
     contentDescription: String? = null,
     contentScale: ContentScale = ContentScale.Crop,
     clipToBounds: Boolean = true,
