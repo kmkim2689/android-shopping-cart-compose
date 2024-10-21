@@ -12,7 +12,7 @@ val cartableProductsFixture =
                 id = 1,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 10000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -22,7 +22,7 @@ val cartableProductsFixture =
                 id = 2,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 20000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -32,7 +32,7 @@ val cartableProductsFixture =
                 id = 3,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 30000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -42,7 +42,7 @@ val cartableProductsFixture =
                 id = 4,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 10000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -52,7 +52,7 @@ val cartableProductsFixture =
                 id = 5,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 20000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -62,7 +62,7 @@ val cartableProductsFixture =
                 id = 6,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 30000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -72,7 +72,7 @@ val cartableProductsFixture =
                 id = 7,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 10000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -82,7 +82,7 @@ val cartableProductsFixture =
                 id = 8,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 20000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -92,7 +92,7 @@ val cartableProductsFixture =
                 id = 9,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 30000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -102,7 +102,7 @@ val cartableProductsFixture =
                 id = 10,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 10000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -112,7 +112,7 @@ val cartableProductsFixture =
                 id = 11,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 20000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
         CartableProduct(
@@ -122,7 +122,9 @@ val cartableProductsFixture =
                 id = 12,
                 name = "상품명한줄넘어가는수준으로길게하면어떻게될까요줄여야하는데",
                 price = 30000,
-                image = "",
+                image = "https://picsum.photos/200",
             )
         ),
     )
+
+val productsFixture = cartableProductsFixture.map { it.product }
