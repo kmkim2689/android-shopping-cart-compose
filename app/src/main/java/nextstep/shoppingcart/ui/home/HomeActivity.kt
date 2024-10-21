@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import nextstep.shoppingcart.domain.CartableProductRepository
 import nextstep.shoppingcart.domain.CartedProductRepository
+import nextstep.shoppingcart.ui.cart.CartActivity
 import nextstep.shoppingcart.ui.detail.DetailActivity
 import nextstep.shoppingcart.ui.theme.ShoppingCartTheme
 
@@ -18,7 +19,9 @@ class HomeActivity : ComponentActivity() {
                     onItemClick = { id ->
                         startActivity(DetailActivity.newIntent(this, id))
                     },
-                    onCartClick = {},
+                    onCartClick = {
+                        startActivity(CartActivity.newIntent(this))
+                    },
                 )
             }
         }

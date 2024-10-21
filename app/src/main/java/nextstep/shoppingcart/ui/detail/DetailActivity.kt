@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import nextstep.shoppingcart.domain.CartableProduct
 import nextstep.shoppingcart.domain.CartableProductRepository
 import nextstep.shoppingcart.domain.Product
+import nextstep.shoppingcart.ui.cart.CartActivity
 import nextstep.shoppingcart.ui.common.components.AppbarWithAction
 import nextstep.shoppingcart.ui.common.components.AppbarWithNavigation
 import nextstep.shoppingcart.ui.common.components.DefaultTextButton
@@ -49,7 +50,9 @@ class DetailActivity : ComponentActivity() {
                 DetailScreen(
                     cartableProduct = product,
                     onBackClick = { finish() },
-                    onCartClick = {},
+                    onCartClick = {
+                        startActivity(CartActivity.newIntent(this))
+                    },
                 )
             }
         }
