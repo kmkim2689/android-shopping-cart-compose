@@ -7,6 +7,8 @@ object CartableProductRepository {
 
     fun fetchProducts(): List<CartableProduct> = products
 
+    fun fetchProduct(id: Long): CartableProduct? = products.find { it.id == id }
+
     fun addQuantity(product: CartableProduct) {
         products = products.map {
             if (it.id == product.id) {
