@@ -32,7 +32,7 @@ fun HomeScreen(
                 actionIcon = Icons.Filled.ShoppingCart,
                 onActionClick = onCartClick,
             )
-        }
+        },
     ) { paddingValues ->
         ProductItemList(
             modifier = Modifier,
